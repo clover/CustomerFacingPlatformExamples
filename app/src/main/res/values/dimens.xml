@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="icon_width">75sp</dimen>
+  <dimen name="icon_width_port">55sp</dimen>
+  <dimen name="icon_height">75sp</dimen>
+  <dimen name="icon_height_port">55sp</dimen>
+</resources>

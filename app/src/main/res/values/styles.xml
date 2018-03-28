@@ -1,0 +1,184 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="CustomDialog" parent="@android:style/Theme.Holo.Light" >
+    <item name="android:windowBackground">@null</item>
+    <item name="android:windowIsFloating">true</item>
+  </style>
+
+  <style name="Popup">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@color/white</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+  <style name="MainContainer">
+    <item name="android:orientation">horizontal</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@color/white</item>
+    <item name="android:padding">20dp</item>
+  </style>
+
+  <style name="ContainerLeft">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">2</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+  <style name="ContainerRight">
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">4</item>
+    <item name="android:layout_height">match_parent</item>
+  </style>
+
+  <style name="VerticalFiller">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">0dp</item>
+    <item name="android:layout_weight">1</item>
+  </style>
+
+  <style name="VerticalDivider">
+    <item name="android:layout_width">1dp</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:background">@color/dark_gray</item>
+    <item name="android:layout_marginStart">10dp</item>
+    <item name="android:layout_marginEnd">10dp</item>
+  </style>
+
+  <style name="HorizontalDivider">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/dark_gray</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:layout_marginBottom">10dp</item>
+  </style>
+
+  <style name="MainHeader">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:textSize">36dp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="MatchWrap">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="Row">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:orientation">horizontal</item>
+  </style>
+
+  <style name="Column">
+    <item name="android:orientation">vertical</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="Popup.Message">
+    <item name="android:minWidth">450dp</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingStart">10dp</item>
+    <item name="android:paddingEnd">10dp</item>
+  </style>
+
+  <style name="CustomButton">
+    <item name="android:layout_height">300dp</item>
+    <item name="android:layout_width">300dp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">@drawable/button_border_padding</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="CustomText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:layout_marginBottom">20dp</item>
+  </style>
+
+  <style name="CustomImage">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">200dp</item>
+    <item name="android:scaleType">fitCenter</item>
+  </style>
+
+  <style name="CustomActivityDescription">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center|bottom</item>
+  </style>
+
+  <style name="Switch">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:track">@drawable/switch_background</item>
+    <item name="android:thumb">@drawable/switch_circle</item>
+    <item name="android:layout_marginBottom">20dp</item>
+    <item name="android:showText">true</item>
+    <item name="android:textOn">@string/on</item>
+    <item name="android:textOff">@string/off</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:text">@string/non_blocking</item>
+  </style>
+
+  <style name="StartActivityButton">
+    <item name="android:layout_width">200dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:background">@drawable/button_border_padding</item>
+    <item name="android:text">@string/start_activity</item>
+  </style>
+  
+  <style name="Header">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_marginEnd">10dp</item>
+  </style>
+
+  <style name="Value">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">18sp</item>
+  </style>
+
+  <style name="InitialPayload">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:inputType">textMultiLine</item>
+    <item name="android:ems">10</item>
+    <item name="android:text">@string/payload_placeholder</item>
+  </style>
+
+  <style name="ResetButton">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/button_border_padding</item>
+    <item name="android:layout_gravity">end</item>
+    <item name="android:text">@string/reset_device</item>
+    <item name="android:onClick">onResetDeviceClick</item>
+  </style>
+
+</resources>

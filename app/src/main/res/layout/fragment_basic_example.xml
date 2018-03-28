@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainContainer">
+  <LinearLayout
+      style="@style/ContainerLeft">
+    <TextView
+        style="@style/MainHeader"
+        android:text="@string/basic_example"/>
+    <Switch
+        style="@style/Switch"
+        android:id="@+id/BasicBlocking"
+        android:checked="false"/>
+    <View
+      style="@style/HorizontalDivider"/>
+    <TextView
+        style="@style/Header"
+        android:text="@string/initial_payload_to_send"/>
+    <EditText
+        android:id="@+id/BasicActivityPayload"
+        style="@style/InitialPayload"/>
+    <View
+        style="@style/HorizontalDivider"/>
+    <Button
+        style="@style/StartActivityButton"
+        android:id="@+id/BasicStartActivity"
+        android:layout_marginTop="10dp"/>
+    <View
+        style="@style/VerticalFiller"/>
+    <TextView
+        style="@style/CustomActivityDescription"
+        android:text="@string/basic_example_desc" />
+  </LinearLayout>
+  <View
+      style="@style/VerticalDivider"/>
+  <LinearLayout
+      style="@style/ContainerRight">
+    <LinearLayout
+        style="@style/Row">
+    <TextView
+        style="@style/Header"
+        android:text="@string/final_payload"/>
+    <TextView
+        style="@style/Value"
+        android:id="@+id/BasicFinalPayload"/>
+    </LinearLayout>
+    <View
+        style="@style/VerticalFiller"/>
+    <Button
+        style="@style/ResetButton"/>
+  </LinearLayout>
+</LinearLayout>

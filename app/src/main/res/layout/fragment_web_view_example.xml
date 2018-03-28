@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainContainer">
+  <LinearLayout
+      style="@style/ContainerLeft">
+    <TextView
+        style="@style/MainHeader"
+        android:text="@string/web_view_example"/>
+    <Switch
+        style="@style/Switch"
+        android:id="@+id/WebBlocking"
+        android:checked="false"/>
+    <Button
+        android:id="@+id/WebStartActivity"
+        style="@style/StartActivityButton"/>
+    <View
+       style="@style/VerticalFiller"/>
+    <TextView
+        style="@style/CustomActivityDescription"
+        android:text="@string/web_view_example_desc"/>
+  </LinearLayout>
+  <View
+      style="@style/VerticalDivider"/>
+  <LinearLayout
+    style="@style/ContainerRight">
+    <LinearLayout
+        style="@style/Row">
+    <TextView
+        style="@style/Header"
+        android:text="@string/final_payload"/>
+    <TextView
+        android:id="@+id/WebFinalPayload"
+        style="@style/Value"/>
+    </LinearLayout>
+    <View
+        style="@style/VerticalFiller"/>
+    <Button
+        style="@style/ResetButton"/>
+  </LinearLayout>
+</LinearLayout>
