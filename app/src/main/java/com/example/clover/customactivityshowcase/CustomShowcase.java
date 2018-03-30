@@ -87,7 +87,7 @@ public class CustomShowcase extends Activity {
   public static final String EXTRA_CLEAR_TOKEN = "CLEAR_TOKEN";
   public static final String CUSTOM_ACTIVITY_PACKAGE = "com.clover.cfp.examples.";
   private AlertDialog pairingCodeDialog;
-  private ICloverConnector cloverConnector;
+  private ICloverConnector  cloverConnector;
   private SharedPreferences sharedPreferences;
   private Dialog ratingsDialog;
   private ListView ratingsList;
