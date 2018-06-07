@@ -1,4 +1,4 @@
-# ![logo](assets/clover_logo.png)
+# ![logo](CustomActivityApp/assets/clover_logo.png)
 
 ## Clover Customer-Facing Platform SDK - Example App
 
@@ -42,13 +42,13 @@ In the sample application package, you will see two projects, `CustomActivityApp
  2. <p>Install the `CustomActivities` project on the Clover device. The `CloverConnector` methods (mentioned above) are available in this project. Note that these methods require an activity name as a parameter, and are triggered when a matching activity is found on the Clover device.</p>
  3. On the Clover device, run **USB Pay Display** (when tethered) or **Secure Network Pay Display** (when connected to the same network).
     <p align="center">
-        <img src="assets/UPD.png" width="45%">
-        <img src="assets/SNPD.png" width="45%">
+        <img src="CustomActivityApp/assets/UPD.png" width="45%">
+        <img src="CustomActivityApp/assets/SNPD.png" width="45%">
     </p>
 
  4. Run `CustomActivityApp` from your Android device and connect using your selected Pay Display application.
     <p align="center">
-        <img align="center" src="assets/connect.png" width="75%">
+        <img align="center" src="CustomActivityApp/assets/connect.png" width="75%">
     </p>
 
 ### Features
@@ -59,7 +59,7 @@ In the sample application package, you will see two projects, `CustomActivityApp
 - When you select **Finish** within the activity, the `setResultAndFinish()` method from `clover-cfp-sdk` is invoked. This method sends a payload back to the POS with `CloverConnector.onCustomActivityResult()`.
 - The payload exchange between the Android device and Clover device represents a single Custom Activity **session**.
 <p align="center">
-    <img src="assets/basic.gif" width="50%">
+    <img src="CustomActivityApp/assets/basic.gif" width="50%">
 </p>
 
 #### Basic Conversation Example
@@ -68,21 +68,21 @@ In the sample application package, you will see two projects, `CustomActivityApp
 - When you select **Send** within the activity, invokes the `sendMessage()` method from `clover-cfp-sdk` is invoked. This method sends a joke response payload back to the POS with `CloverConnector.onMessageFromActivity()`.
 - Data can be exchanged indefinitely until the session is completed. The session is complete when the activity invokes `setResultAndFinish()` and the POS receives the signal with `CloverConnector.onCustomActivityResult()`. Note that in this example, only one response is exchanged. Select **Send** to end the Custom Activity session.
 <p align="center">
-    <img src="assets/conversation.gif" width="50%">
+    <img src="CustomActivityApp/assets/conversation.gif" width="50%">
 </p>
 
 #### Carousel Example
 
 A Custom Activity is started to display a photo stream on the customer-facing Clover Device. To exit to the main menu, touch the 4 corners of the device.
 <p align="center">
-    <img src="assets/carousel.gif" width="50%">
+    <img src="CustomActivityApp/assets/carousel.gif" width="50%">
 </p>
 
 #### Web View Example
 
 A Custom Activity that contains a web view is launched on the Clover device. With this web view, you can communicate with and send a message back to the POS.
 <p align="center">
-    <img src="assets/webview.gif" width="50%">
+    <img src="CustomActivityApp/assets/webview.gif" width="50%">
 </p>
 
 #### Ratings Example
@@ -92,12 +92,12 @@ A Custom Activity that contains a web view is launched on the Clover device. Wit
 - To test this example, use the code `1111` on the screen requesting for a phone number.
 
 <p align="center">
-    <img src="assets/ratings.gif" width="50%">
+    <img src="CustomActivityApp/assets/ratings.gif" width="50%">
 </p>
 
 #### NFC Example
 
 A Custom Activity is launched on the Clover device. This enables the device to listen for an NFC tap, and then to send the tagged card serial number back to the POS (Note that this example currently works only on Bypass Fortress Cards).
 <p align="center">
-    <img src="assets/nfc.png" width="50%">
+    <img src="CustomActivityApp/assets/nfc.png" width="50%">
 </p>
