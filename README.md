@@ -34,12 +34,12 @@ You can also simply download and extract the ZIP file.
 
 #### Installing Projects
 
-In the sample application package, you will see two projects, `CustomActivityApp` and `CustomActivities`. You can start working with these projects by performing the following tasks:
+You can start working with the application by performing the following tasks:
 
  1. Connect your computer to the Android device that will serve as your POS. Install the `CustomActivityApp` project on the Android device. There are 2 ways to do this:
   * In the project directory, run the `gradle installDebug` command, or
   * Run the project in Android Studio with the deployment target set as your attached device
- 2. <p>Install the `CustomActivities` project on the Clover device. The `CloverConnector` methods (mentioned above) are available in this project. Note that these methods require an activity name as a parameter, and are triggered when a matching activity is found on the Clover device.</p>
+ 2. Install the activities that will interface with the `CloverConnector` methods (mentioned above). Note that these methods require an activity name as a parameter, and are triggered when a matching activity is found on the Clover device. Clone the [android examples repository](https://github.com/clover/android-examples) and install the project `clover-cfp-examples` through `gradle installDebug`.
  3. On the Clover device, run **USB Pay Display** (when tethered) or **Secure Network Pay Display** (when connected to the same network).
     <p align="center">
         <img src="assets/UPD.png" width="45%">
