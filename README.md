@@ -22,7 +22,7 @@ The `clover-cfp-sdk` provides a base implementation of an activity. You can exte
 
 With this SDK, you can trigger custom activities from your POS to a Clover device and create tailor-made customer experiences, such as tip selection, ratings and feedback, benefits program enrollment, and more. You can find the maven repository of the SDK [here](http://mvnrepository.com/artifact/com.clover.cfp/clover-cfp-sdk).
 
-Please visit [Clover Developer Docs](https://docs.clover.com/build/custom-activities-for-clover-mini/) for documentation and code snippets.
+See the [Clover Developer Docs](https://docs.clover.com/clover-platform/docs/using-customer-facing-platform) for documentation and code snippets.
 
 ### Sample Application Setup
 
